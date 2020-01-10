@@ -8,14 +8,17 @@ Una ves instalado clonar el projecto en la maquina local ejecutar el siguiente c
 
 ```git
 git clone https://github.com/CesarBracoL/CustomerSatisfation.git
+```
 
 Cuando termine de decargar los archivos, luego dirigirse dentro del proyecto AppWebSite/
 - Ejecutar el siguiente comando para compilar todo el proyecto:
 
 ```docker-compose
 docker-compose -f docker-compose.override.yml build
+```
 
 Y luego ejecutar el siguiente codigo para ejecutar el proyecto completo:
 ```docker-compose
 docker-compose -f docker-compose.override.yml up
+```
 
