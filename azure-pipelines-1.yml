@@ -19,5 +19,5 @@ steps:
     projects: '**/*AppWebSite.UnitTest/*.csproj'
     arguments: '--configuration $(buildcondiguration)'
 
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build --configuration $(buildConfiguration) --project AppWebSite/AppWebSite.csproj
   displayName: 'dotnet build $(buildConfiguration)'
