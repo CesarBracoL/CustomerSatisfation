@@ -11,10 +11,13 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+
+steps:
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'build'
-    workingDirectory: 'CustomerSatisfation/AppWebSite/'
-steps:
+    command: test
+    projects: '**/*AppWebSite.UnitTest/*.csproj'
+    arguments: '--configuration $(buildcondiguration)'
+
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
