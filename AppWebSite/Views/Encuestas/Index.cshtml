@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AppWebSite.Models.Encuesta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Registros </h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Fecha Registro
+            </th>
+            <th>
+                Calificacion
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ennombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enemail)
+            </td>
+            <td>
+                @DateTime.Parse(item.Enfecha.ToString()).ToString("yyyy-MM-dd")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Encalificacion)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,9 @@
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\AppWebSite.Views.dll
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\AppWebSite.Views.pdb
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\appsettings.Development.json
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\appsettings.json
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\Properties\launchSettings.json
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\AppWebSite.dll
+C:\Users\CESAR\source\repos\AppWebSite\bin\Debug\AppWebSite.pdb
+C:\Users\CESAR\source\repos\AppWebSite\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\Users\CESAR\source\repos\AppWebSite\obj\Debug\docker-compose.dcproj.CopyComplete

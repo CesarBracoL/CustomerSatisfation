@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  appwebsite:
+    image: ${DOCKER_REGISTRY-}appwebsite
+    build:
+      context: .
+      dockerfile: Dockerfile

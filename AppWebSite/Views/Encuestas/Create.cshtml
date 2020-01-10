@@ -1,0 +1,54 @@
+﻿@model AppWebSite.Models.Encuesta
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Encuesta</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @if (ViewBag.Mensaje != null)
+        {
+            <span class="text-danger">@ViewBag.Mensaje</span>
+        }
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Enemail" class="control-label">Email</label>
+                <input asp-for="Enemail" class="form-control" />
+                <span asp-validation-for="Enemail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ennombre" class="control-label">Nombre Completo</label>
+                <input asp-for="Ennombre" required class="form-control" />
+                <span asp-validation-for="Ennombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Encalificacion" class="control-label">Calificacion </label><br />
+
+                <input type="radio" required asp-for="Encalificacion" value="1" /><b>1 </b>
+                <input type="radio" required asp-for="Encalificacion" value="2" /><b>2 </b>
+                <input type="radio" required asp-for="Encalificacion" value="3" /><b>3 </b>
+                <input type="radio" required asp-for="Encalificacion" value="4" /><b>4 </b>
+                <input type="radio" required asp-for="Encalificacion" value="5" /><b>5 </b>
+                <input type="radio" required asp-for="Encalificacion" value="6" /><b>6 </b>
+                <input type="radio" required asp-for="Encalificacion" value="7" /><b>7 </b>
+                <input type="radio" required asp-for="Encalificacion" value="8" /><b>8 </b>
+                <input type="radio" required asp-for="Encalificacion" value="9" /><b>9 </b>
+                <input type="radio" required asp-for="Encalificacion" value="10" /><b>10</b><br />
+
+                <span asp-validation-for="Encalificacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,23 @@
+services:
+  appwebsite:
+    build:
+      context: C:\Users\CESAR\source\repos\AppWebSite
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DBServer: ms-sql-server
+    image: appwebsite
+    ports:
+    - published: 8081
+      target: 80
+    restart: always
+  ms-sql-server:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Cb#053301208
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    ports:
+    - published: 1434
+      target: 1433
+version: '3.4'
