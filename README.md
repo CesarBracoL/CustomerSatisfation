@@ -1,4 +1,10 @@
-# Rules
+# Procedimiento para ejecutar el aplicativo
+Este repositorio contiene 3 proyecto:
+
+- AppWebSite
+- AppWebSite.UnitTest
+- AppWebSite.IntegrationTests
+
 
 Instalar Docker:
  - El requisito para poder ejecutar el proyecto, es tener instalado Docker en la maquina local
@@ -17,7 +23,7 @@ Cuando termine de decargar los archivos, luego dirigirse dentro del proyecto App
 docker-compose -f docker-compose.override.yml build
 ```
 
-Y luego ejecutar el siguiente codigo para ejecutar el proyecto completo:
+- Y luego ejecutar el siguiente codigo para ejecutar el proyecto completo:
 ```docker-compose
 docker-compose -f docker-compose.override.yml up
 ```
